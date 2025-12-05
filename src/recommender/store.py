@@ -5,8 +5,7 @@ from langchain_openai import OpenAIEmbeddings
 from .config import CHROMA_DB_DIR, EMBED_MODEL
 
 
-from dotenv import load_dotenv
-load_dotenv()
+
 class ChromaStore:
     def __init__(self):
         self.embeddings = OpenAIEmbeddings(model=EMBED_MODEL)
