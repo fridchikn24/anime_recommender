@@ -25,7 +25,7 @@ class ChromaStore:
             metadatas=metadatas,
             persist_directory=CHROMA_DB_DIR
         )
-        self.db.persist()
+        #self.db.persist()
         print(f"✓ Chroma database created at '{CHROMA_DB_DIR}' with {len(docs)} documents")
 
     def load(self):
